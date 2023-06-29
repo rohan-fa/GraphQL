@@ -41,4 +41,44 @@ we will hit the req and ask for the name ,age or email id
 ```
  npm i nodemon express-graphql express graphql
  ```
- 
+ ### server.js
+
+ ### schema.js
+
+create schema. 
+```
+const {
+    GraphQLObjectType,
+    GraphQLSchema,
+    GraphQLInt,
+    GraphQLString,
+    GraphQLList
+} = graghql;    
+```
+
+we are taking this variable for it we need username, or userId. so Before that we will ask the user you're asking it is integer, string, list? all of those we can track through this variables. 
+#### second 
+we will ask what the userType? 
+example: 
+```
+Describe your data
+type Project {
+  name: String
+  tagline: String
+  contributors: [User]
+}
+```
+```
+Ask for what you want
+{
+  project(name: "GraphQL") {
+    tagline
+  }
+}
+```
+in here tagline: String. 
+
+
+
+
+
