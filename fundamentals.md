@@ -77,8 +77,25 @@ Ask for what you want
 }
 ```
 in here tagline: String. 
+#### SO because of that we created some fields to get thing quickly
+```
 
+const userType = new GraphQLObjectType({
+    name:'user',
+    fields: ()=> ({
+        id:{type: GraphQLInt},
+        name:{type:GraphQLString},
+        emial:{type: GraphQLString},
+        phone:{type:GraphQLInt}
+    })
+})
+```
+so whats happening? <br>
+we took all the variables, we made an object userType so who ever make a request that fields to be there are written like name, id, email, phone. if someone make or else req error will come. now we check in codeimprove named function, now here we will check the type those we just defined (GraphQLString) or (GraphQLString), etc. when those are resolved we can ask for the data to provide and return. 
 
+```
+npx nodemon server.js
+```
 
 
 
