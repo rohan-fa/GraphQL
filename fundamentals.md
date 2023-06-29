@@ -36,4 +36,16 @@ it will return that data. main thing is there will be only one end point. what e
 so to use graphQL we will not have direct url so that we can just hit in the browser. if we have <br>
 React<br>
 use Apollo client.<br>
-we will hit the req and ask for the name ,age or email id
+we will hit the req and ask for the name ,age or email id so if will return all the qurey we want to get. 
+
+### npm express-graphql
+go to npm. search apollo-server. open apollo-server and apollo-server-express, express-graphql in new tab. 
+```
+npm init -y
+```
+```
+ npm i express nodemon express-graphql graphql
+ 
+```
+
+
