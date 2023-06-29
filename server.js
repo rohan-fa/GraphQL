@@ -16,5 +16,5 @@ app.use("/graphql",
 );         //in this path graghql will run 
 
 app.listen(PORT, () => {
-    console.log(`App is running at http://localhost:${PORT}`)
+    console.log(`App is running at http://localhost:${PORT}`);
 })
