@@ -13,8 +13,8 @@ const userType = new GraphQLObjectType({
     fields: ()=> ({
         id:{type: GraphQLInt},
         name:{type:GraphQLString},
-        emial:{type: GraphQLString},
-        phone:{type:GraphQLInt}
+        email:{type: GraphQLString},
+        phone:{type:GraphQLString}
     })
 })
 
@@ -33,10 +33,13 @@ const RootQuery = new GraphQLObjectType({
                 {
                     id:13,name:"demo",email:"ran@gmai.com",phone:3411433534566
                 }]
-                return data;
+                return data;           
             }
+            
         }
+        
     })
+    
 }) 
 
 module.exports = new GraphQLSchema({query : RootQuery})

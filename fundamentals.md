@@ -97,5 +97,17 @@ we took all the variables, we made an object userType so who ever make a request
 npx nodemon server.js
 ```
 
+after creating schema go to localhost:4000/graphql
+and try it : 
+```
+query{
+  codeimprove{
+    id
+    name
+    email
+  }
+}
+```
+
 
 
