@@ -6,6 +6,7 @@ const {graphqlHTTP} = require("express-graphql");
 
 const schema = require("./schema");
 
+require("./models");
 app.use(express.json())
 
 

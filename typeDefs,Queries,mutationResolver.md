@@ -14,4 +14,11 @@ ctrl<br>
 model<br>
     route<br>
 #### lets add the database : Mysql
-folder - confiq => db.js
+folder - confiq => db.js. now we will install sequelize and then connect. 
+```
+npm i sequelize mysql2
+
+```
+#### Model
+in model folder => index.js [ in here we will make a schema]<br>
+users.js

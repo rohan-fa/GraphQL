@@ -18,6 +18,9 @@ const userType = new GraphQLObjectType({
     })
 })
 
+let db = require("./models");
+const User = db.users;
+
 //now will create a function so that anything will be called data will provide accordingly, means Root query
 
 const RootQuery = new GraphQLObjectType({
@@ -40,12 +43,7 @@ const RootQuery = new GraphQLObjectType({
         userList:{
             type: new GraphQLList(userType),
             resolve(parents, args){
-                let data = [{
-                    id:12,name:"codeimprove",email:"rohan@gmai.com",phone:24335345245
-                },
-                {
-                    id:13,name:"demo",email:"ran@gmai.com",phone:3411433534566
-                }]
+                let data = User.findAll();
                 return data;           
             }
         }
