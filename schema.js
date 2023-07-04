@@ -36,6 +36,18 @@ const RootQuery = new GraphQLObjectType({
                 return data;           
             }
             
+        },
+        userList:{
+            type: new GraphQLList(userType),
+            resolve(parents, args){
+                let data = [{
+                    id:12,name:"codeimprove",email:"rohan@gmai.com",phone:24335345245
+                },
+                {
+                    id:13,name:"demo",email:"ran@gmai.com",phone:3411433534566
+                }]
+                return data;           
+            }
         }
         
     })
